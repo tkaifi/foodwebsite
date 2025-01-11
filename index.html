@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -34,20 +35,26 @@
     <main>
         <section class="hero">
             <div class="hero-text">
-                <h5>Giảm giá của ngày hôm nay!!</h5>
-                <h1>BURGER</h1>
-                <p>Dở ẹc à đừng có mua</p>
-                <div class="main-hr">
+                <h5 data-aos="fade-right" data-aos-duration="1440" data-aos-delay="200">Giảm giá của ngày hôm nay!!</h5>
+                <h1 data-aos="zoom-out-right" data-aos-duration="1440" data-aos-delay="300">BURGER</h1>
+                <p data-aos="fade-right" data-aos-duration="1440" data-aos-delay="200">Dở ẹc à đừng có mua</p>
+                <div class="main-hr" data-aos="flip-down" data-aos-duration="1440" data-aos-delay="400">
                     <a href="#" class="price">50.000 VND | <span> Giá tốt nhất rồi không mua thì thôi</span></a>                   
                     <a href="#" class="btn">Đặt hàng ngay</a>
                     
                 </div>
             </div>
-            <div class="hero-img">               
+            <div class="hero-img" data-aos="zoom-in-left" data-aos-duration="1440" data-aos-delay="300">               
                 <img src="img/store1.png">
             </div>
         </section>
     </main>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 1,
+      });
+    </script>
 </body>
 </html>
