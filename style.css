@@ -26,7 +26,6 @@ body{
 body, html {
     overflow-x: hidden;
 }
-
 header{
     position: fixed;
     width: 100%;
@@ -34,8 +33,9 @@ header{
     right: 0;
     left: 0;
     z-index: 999;
-    padding: 35px 7% ;
+    padding: 35px 7%  ;
     display: flex;
+    backdrop-filter: blur(20px);
     align-items: center;
     justify-content: space-between;
     transition: all .6s ease;
@@ -105,11 +105,11 @@ header{
     background: transparent rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
     border-radius: 25px;
-    padding: 30px 40px;
+    padding: 15px 35px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: var(--text-color);
     text-align: center;
-    z-index: 10;
+    z-index: 1100;
 }
 form h2{
     font-family: "Poppins" sans-serif;
@@ -122,17 +122,16 @@ form h2{
 .input-box{
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 70%;
     margin-bottom: 30px 0;
 }
 .input-box input{
     width: 100%;
-    padding: 11px 40px;
+    padding: 12px 0;
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 255,255, .5);
-    border-radius: 40px;
-    font-size: 16px;
+    border-bottom: 2px solid rgba(255, 255,255, .2);
+    font-size: var(--p-font);
     color: var(--text-color);
     background: transparent;
 }
@@ -187,6 +186,7 @@ button[type="submit"]:hover{
     color: var(--text-color);
     text-decoration: none;
     font-weight: 600;
+    margin-left: 10px;
 }
 .register-link a:hover{
     text-decoration: underline;
@@ -331,7 +331,6 @@ section{
    } 
    :root{
     --size-100: 70%;
-    align-items: center;
     }
 }
 @media(max-width: 1150px){
@@ -451,6 +450,14 @@ section{
     }
 }
 @media(max-width: 360px){
+    :root{
+        --h2-font:1.8rem;
+        --big-font: 2.6rem;
+        --p-font: 13px;
+    }
+    header{
+        padding: 7px 15px 0 10px ;
+    }
     .nav-menu{
         position: absolute;
         width: 100%;
@@ -459,6 +466,11 @@ section{
     }
     .nav-menu.open{
         left: 50%;
+    }
+    .nav-logo img{
+        width: 80px;
+        height: auto;
+        padding-top:3px ;
     }
     .hero-text .price{
         font-size: 20px;
@@ -476,9 +488,16 @@ section{
         height: 100%;
         margin: 0 auto;
     }
+    .right-content .nav-btn{
+        padding: 5px 20px; 
+        font-size: 13px;  
+    }
     .btn:hover{
         transform: scale(1.06);
     }
-    
+    #menu-icon{
+        font-size: 38px;
+        margin-left: 15px;
+    }
 }
 
