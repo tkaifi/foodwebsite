@@ -490,7 +490,8 @@ section{
     }
     .right-content .nav-btn{
         padding: 5px 20px; 
-        font-size: 13px;  
+        font-size: 13px;
+        border: 1px solid var(--text-color);;  
     }
     .btn:hover{
         transform: scale(1.06);
