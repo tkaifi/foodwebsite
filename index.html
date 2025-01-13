@@ -28,11 +28,38 @@
             <li><a href="#" class="nav-link">Liên hệ</a></li>
         </ul>
         <div class="right-content">
-            <a href="#" class="nav-btn">Đăng nhập</a>
+            <button class="nav-btn">Đăng nhập</button>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
-    </header>
+    </header>   
+       <!--all.section-->
     <main>
+        <!-- log in -->  
+        <section class="login-section">
+            <div class="wrapper">
+                <form action="">
+                    <h2>Đăng nhập</h2>
+                    <div class="input-box">
+                        <input type="text" placeholder="Tài khoản" id="user-name" name="user" required>
+                        <i class='bx bxs-user-circle'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Mật khẩu" id="password" name="password" required>
+                        <i class='bx bx-lock' ></i>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" id="remember-me" name="remember">Ghi nhớ tôi</label>
+                        <a href="#">Quên mật khẩu</a>
+                    </div>
+     
+                    <button type="submit" class="btn">Đăng nhập</button>   
+                    <div class="register-link">
+                        <p>Không có tài khoản?<a href="#">Đăng ký</a><p>
+                    </div> 
+                </form>
+            </div>
+        </section>     
+        <!--hero -->
         <section class="hero">
             <div class="hero-text">
                 <h5 data-aos="fade-right" data-aos-duration="1440" data-aos-delay="200">Giảm giá của ngày hôm nay!!</h5>
@@ -48,6 +75,24 @@
                 <img src="img/store1.png">
             </div>
         </section>
+        <!-- about us -->
+         <section class="about-section">
+            <div class="sections-text">
+                <h2>Về chúng tôi</h2>
+                <p>Tên tôi là Thái Phi tôi tạo ra FoodWebsite để phục vụ cho người dùng.
+                Chúng tôi hướng đến các thức anh nhanh tiện lợi nhanh gọn cho người cần nó.
+                Món ăn làm nên tên tuổi của FWs bao năm qua</p>
+                <div class="social">
+                    <a href="#" class="sc-link"><i class="ri-facebook-circle-line"></i></a>
+                    <a href="#" class="sc-link"><i class="ri-instagram-line"></i></a>
+                    <a href="#" class="sc-link"><i class="ri-twitch-line"></i></a>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="img/01.png">
+            </div>
+         </section>
+
     </main>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
