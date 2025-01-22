@@ -52,7 +52,7 @@ header{
     position: relative;
     margin:  0 35px;
     color: var(--text-color);
-    font-size: var(--p-font);
+    font-size: 22px;
     transition: all .6s ease;
 }
 .nav-menu a:hover{
@@ -243,7 +243,7 @@ section{
     color: var(--text-color);
     font-size: 15px;
     font-weight: 500;
-    transition: all .6s ease-in-out;
+    transition: all .6s ease-in;
     margin-right: 10px;
     margin: 20px 0 0 0;
 }
@@ -447,6 +447,18 @@ section{
     .about-section{
         width: 100%;
         height: 100vh;
+    }
+}
+@media(max-width:390px){
+    .hero-text .price{
+        font-size: 22px;
+    }
+    header{
+        padding:10px 15px 2px 10px;
+    }
+    .nav-logo img{
+        width: 90px;
+        height: auto;
     }
 }
 @media(max-width: 360px){
